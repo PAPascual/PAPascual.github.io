@@ -5,14 +5,14 @@ body {
   
   p {
     color: #000000;
-    font-family: 'Cascadia Code', Century Gothic, sans-serif;
+    font-family: Century Gothic, sans-serif;
     margin: 30px;
     line-height: 1.5;
   
   }
   
   h1, h2 {
-    font-family: 'Bookman Old Style', serif
+    font-family: 'Century', serif
   }
 
   sup {
