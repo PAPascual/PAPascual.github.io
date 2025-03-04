@@ -1,20 +1,76 @@
 body {
-    background-color: #EDEBE9;
-    margin: 0px;
-  }
+  background-color: #EDEBE9;
+  margin: 0px;
+}
   
-  p {
-    color: #000000;
-    font-family: Century Gothic, sans-serif;
-    margin: 30px;
-    line-height: 1.5;
+p {
+  color: #000000;
+  font-family: Century Gothic, sans-serif;
+  margin: 30px;
+  line-height: 1.5;
+}
   
-  }
-  
-  h1, h2 {
-    font-family: 'Century', serif
-  }
+h1, h2 {
+    font-family: 'Century', serif;
+    margin: 30px
+}
 
-  sup {
+sup {
     color: red;
-  }
+}
+
+div.header{
+  display: flex;
+  padding: 30px;
+  background: #8CC084;
+  font-family: "Bookman Old Style", Century, Serif;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.logo {
+  display: inline-block;
+}
+
+div a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #000000;
+}
+
+div.header li {
+  list-style: none;
+  display: inline-block;
+}
+
+div.nav {
+  width: 250px;
+  margin-left: 30px;
+  border-style: solid;
+}
+
+div.nav li {
+  font-family: 'Century Gothic', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+  list-style: none;
+  display: block;
+}
+
+a.gotop {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a.home {
+  font-family: 'Bahnschrift', sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: #6F5E53;
+  color: #EDEBE9;
+  padding: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 10px;
+}
