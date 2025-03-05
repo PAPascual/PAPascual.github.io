@@ -11,7 +11,7 @@ p {
 }
   
 h1, h2 {
-    font-family: 'Century', serif;
+    font-family: 'Courier New', serif;
     margin: 30px
 }
 
@@ -21,14 +21,15 @@ sup {
 
 div.header{
   display: flex;
-  padding: 30px;
+  padding: 20px;
   background: #8CC084;
-  font-family: "Bookman Old Style", Century, Serif;
   align-items: center;
   justify-content: space-between;
 }
 
 div.logo {
+  font-family: 'Cascadia Mono', serif;
+  font-size: 3rem;
   display: inline-block;
 }
 
@@ -39,21 +40,24 @@ div a {
 }
 
 div.header li {
+  font-family: 'Bahnschrift', serif;
+  font-size: 1.5rem;
   list-style: none;
   display: inline-block;
 }
 
 div.nav {
-  width: 250px;
+  width: fit-content;
   margin-left: 30px;
   border-style: solid;
 }
 
 div.nav li {
-  font-family: 'Century Gothic', serif;
-  font-size: 18px;
+  font-family: 'Bahnschrift', serif;
+  font-size: 22px;
   line-height: 1.5;
   font-weight: bold;
+  margin-right: 30px;
   list-style: none;
   display: block;
 }
@@ -74,3 +78,17 @@ a.home {
   border-color: #000000;
   border-radius: 10px;
 }
+
+
+div.resumebox {
+  display: inline-table;
+  width: fit-content;
+  border-style: solid;
+  margin: 30px;
+}
+
+div.resumebox li {
+  font-family: 'Cascadia Mono', sans-serif;
+  margin-right: 30px;
+}
+
