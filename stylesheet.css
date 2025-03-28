@@ -20,7 +20,6 @@ sup {
 }
 
 div.header{
-  width: 98%;
   display: flex;
   padding: 20px;
   background: #8CC084;
@@ -40,11 +39,39 @@ div a {
   color: #000000;
 }
 
+div.header a:hover {
+  color: #EDEBE9;
+}
+
 div.header li {
   font-family: 'Bahnschrift', serif;
   font-size: 1.2rem;
   list-style: none;
   display: inline-block;
+}
+
+#welcomescreen {
+  justify-content: end;
+  overflow: hidden;
+}
+
+#homephoto {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#welcomevideo {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-left: 120px;
+}
+
+div.navbar {
+  position: sticky;
+  top: 0;
+  width: 99.92%;
+  z-index: 1;
 }
 
 div.nav {
@@ -64,8 +91,16 @@ div.nav li {
   display: block;
 }
 
+div.nav a:hover {
+  text-decoration: underline;
+}
+
 a.gotop {
+  color: #000000;
   font-weight: bold;
+}
+
+a.gotop:hover {
   text-decoration: underline;
 }
 
@@ -81,11 +116,25 @@ a.home {
   border-radius: 10px;
 }
 
+#resumepic {
+  display: inline-block;
+  width: 300px;
+  border: 4px solid #6F5E53;
+  margin: 30px 30px;
+}
+
+#resumedesc {
+  display: inline-block;
+  margin-top: 30px;
+  width: 1100px;
+  vertical-align: top;
+}
+
 div.resumebox {
   display: inline-table;
   width: fit-content;
   border-style: solid;
-  margin: 30px;
+  margin: 16px;
 }
 
 div.resumebox li {
@@ -94,9 +143,10 @@ div.resumebox li {
 }
 
 div.photogallery img {
-  width: 13.5%;
+  width: 250px;
   height: auto;
   border: 4px solid #784828;
+  border-radius: 30px;
   opacity: 70%;
   filter: blur(1px);
 }
@@ -107,10 +157,13 @@ div.photogallery img:hover {
 }
 
 div.photorow {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 30px;
+  margin: 30px 12px;
+  text-align: center;
+}
+
+div.photorow a {
+  margin: 15px 12px;
+  vertical-align: middle;
 }
 
 div.thumbnails {
@@ -155,6 +208,19 @@ video {
 
 .mediasection iframe, h2, video{
   margin: 12px 30px;
+  display: inline-block;
+}
+
+.beatsection {
+  display: inline-block;
+  vertical-align: top;
+  width: 470px;
+}
+
+.filmdesc {
+  display: inline-block;
+  width: 800px;
+  vertical-align: top;
 }
 
 .cityheading {
@@ -171,11 +237,43 @@ video {
 .citydesc {
   vertical-align: top;
   display: inline-block;
-  width: 64%;
+  width: 63%;
 }
 
 .citybody img {
   vertical-align: top;
   width: 400px;
   border: 4px solid #6F5E53;
+}
+
+.citygoback {
+  text-decoration: none;
+  color: #000000;
+}
+
+.citygoback:hover {
+  text-decoration: underline;
+}
+
+.bucketlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 4px;
+}
+
+.bucketcolumn {
+  background-color: #6F5E53;
+  border: 4px solid #6F5E53;
+  border-radius: 30px;
+  width: 550px;
+  text-align: center;
+  color: #EDEBE9;
+  margin: 15px 0;
+}
+
+.bucketcolumn li {
+  font-family: Cascadia Code, sans-serif;
+  font-size: 20px;
+  margin: 8px 40px 12px 0px;
 }
